@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The personal portfolio of Urherebrume Oghenekewe, aspiring web developer and Azure DevOps Engineer.">
+    <title>Urherebrume Oghenekewe | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container navigation">
+            <a class="brand" href="#home">UO.</a>
+            <nav aria-label="Main navigation">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">
+                Switch to dark mode
+            </button>
+        </div>
+    </header>
+
+    <main class="container" id="home">
+        <div class="hero">
+            <div>
+                <p class="eyebrow">Student · Aspiring Developer</p>
+                <h1>Hello, I'm <span>Urherebrume Oghenekewe.</span></h1>
+                <p class="hero-copy">I’m an aspiring web developer and Azure DevOps Engineer, building my skills one project at a time.</p>
+                <a class="primary-link" href="#contact">Get in touch</a>
+            </div>
+            <div class="hero-card" aria-label="UO initials">
+                <div class="initials" aria-hidden="true">UO</div>
+            </div>
+        </div>
+
+        <section id="about">
+            <p class="eyebrow">A little about me</p>
+            <h2 class="section-heading">About Me</h2>
+            <div class="about-card">
+                <p>My name is Urherebrume Oghenekewe. I’m 18 years old and a 300-level student at Covenant University.</p>
+                <p>I’m an aspiring web developer and Azure DevOps Engineer, currently learning web development at CWW TECH AFRICA. I enjoy exploring how technology can be used to create useful things, and I’m excited to keep learning and growing.</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <p class="eyebrow">What I’m learning</p>
+            <h2 class="section-heading">Skills</h2>
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <span class="skill-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <h3>Web Development</h3>
+                    <p>HTML, CSS and JavaScript</p>
+                </article>
+                <article class="skill-card">
+                    <span class="skill-icon" aria-hidden="true">J</span>
+                    <h3>Java</h3>
+                    <p>Programming fundamentals and problem solving</p>
+                </article>
+                <article class="skill-card">
+                    <span class="skill-icon" aria-hidden="true">Py</span>
+                    <h3>Python</h3>
+                    <p>Python programming</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects">
+            <p class="eyebrow">Things I’m working on</p>
+            <h2 class="section-heading">Projects</h2>
+            <p class="projects-note">Add a project by duplicating a project card in this page’s HTML, then updating its title, description and project link.</p>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <span class="project-label">Personal project</span>
+                    <h3>My Portfolio</h3>
+                    <p>A simple, responsive website to introduce myself, share my skills and document my learning journey.</p>
+                    <a class="project-link" href="#home">Visit this portfolio &rarr;</a>
+                </article>
+                <article class="project-card">
+                    <span class="project-label">Coming soon</span>
+                    <h3>More projects in progress</h3>
+                    <p>I’m learning and building new things. Check back soon to see what I create next.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact">
+            <p class="eyebrow">Let’s connect</p>
+            <h2 class="section-heading">Contact</h2>
+            <div class="contact-card">
+                <div>
+                    <h3>Have a question or opportunity?</h3>
+                    <p>Send me a message or contact me directly using the details below.</p>
+                    <div class="contact-details">
+                        <a href="mailto:Brumeo08@gmail.com">Brumeo08@gmail.com</a>
+                        <a href="tel:+2349037064093">09037064093</a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form" action="https://formsubmit.co/Brumeo08@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="New portfolio contact message">
+                    <input type="text" name="_honey" class="form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+                    <label for="sender-name">Your name</label>
+                    <input id="sender-name" name="name" type="text" autocomplete="name" maxlength="100" required>
+
+                    <label for="sender-email">Your email</label>
+                    <input id="sender-email" name="email" type="email" autocomplete="email" maxlength="254" required>
+
+                    <label for="sender-message">Message</label>
+                    <textarea id="sender-message" name="message" maxlength="5000" required></textarea>
+
+                    <button type="submit">Send message</button>
+                    <p class="form-note">Your message is sent through FormSubmit to my email. Please don’t include sensitive information. The first submission requires me to confirm my email address with FormSubmit.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Urherebrume Oghenekewe. Made with care.</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
